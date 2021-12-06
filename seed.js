@@ -1,6 +1,7 @@
 const {sequelize} = require('./db')
 //const {Restaurant, Menu, Item} = require('./models/index') //Q: WHY import these models from index vs. from each separate model file?
 const {Restaurant} = require('./models/Restaurant')
+const {Menu} = require('./models/Menu')
 
 //Q: Why do you think each object inside of the arrays are structured the way that they are?
 //Q: What do you think will happen when we 'seed' this file?
@@ -32,20 +33,20 @@ const seedRestaurant = [
   },
 ]
 
-// const seedMenu = [
-//   {
-//     title: 'Breakfast',
-//     RestaurantId : 1,
-//   },
-//   {
-//     title: 'Lunch',
-//     RestaurantId : 2,
-//   },
-//   {
-//     title: 'Dinner',
-//     RestaurantId : 3,
-//   },
-// ]
+const seedMenu = [
+  {
+    title: 'Breakfast',
+    RestaurantId : 1,
+  },
+  {
+    title: 'Lunch',
+    RestaurantId : 2,
+  },
+  {
+    title: 'Dinner',
+    RestaurantId : 3,
+  },
+]
 
 // const seedItem = [
 //   {
