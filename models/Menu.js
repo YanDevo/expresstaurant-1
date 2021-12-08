@@ -4,9 +4,10 @@ const {DataTypes, Model} = require('sequelize')
 class Menu extends Model{}
 
 Menu.init({
-    title: DataTypes.String
-},
-    {sequelize,
+    title: DataTypes.STRING,
+    type: DataTypes.STRING
+}, {
+     sequelize,
      timestamps: false
 
     })
@@ -14,4 +15,3 @@ Menu.init({
     module.exports = {Menu};
 
 
-    
